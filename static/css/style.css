@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+@font-face {
+  font-family: autography;
+  src: url("../fonts/Autography.otf") format("opentype");
+}
+
+@font-face {
+  font-family: signature;
+  src: url("../fonts/Photograph Signature.ttf") format("opentype");
+}
+
+.carousel-item {
+  position: inherit;
+  height: 750px;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffa601;
+}
+
+.carousel-caption h5 img {
+  padding-bottom: 12px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 100px;
+  line-height: 1.9;
+  font-family: 'signature', sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.carousel-caption p {
+  transition: 0.6s;
+}
+
+.carousel-caption p:hover {
+  transition: 0.6s;
+  color: #c200fd;
+  cursor: pointer;
+}
+
+#desc {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 100;
+  color: #fff;
+  cursor: default;
+}
+
+.carousel-caption .link {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #000000;
+  font-weight: 200;
+}
+
+.carousel-caption a {
+  transition: 0.5s;
+  text-decoration: None;
+  background: #c200fd;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 200;
+}
+
+.carousel-caption a:hover {
+  transition: 0.5s;
+  background-color: #fff;
+  font-weight: 200;
+  color: #c200fd;
+} 
+
+.carousel a .carousel-control-prev{
+  color: transparent;
+}
+
+.navbar {
+  background-image:
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.205), #00000000
+    );
+}
+
+.navbar-dark {
+  transition: 0.5s;
+  background-color: black;
+}
+
+.navbar-dark.scrolled {
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+.navbar-nav a {
+  transition: 0.5s;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding-right: 7.5px;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffa601;
+}
+
+.navbar-nav a:hover {
+  color: #ffa601;
+  transition: 0.6s;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  color: #ffa601;
+  transition: 0.6s;
+}
+
+.navbar-dark .navbar-brand {
+  transition: 0.5s;
+  color: #ffa601;
+  font-size: 27.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'signature', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #c200fd;
+  transition: 0.8s;
+}
+
+.imgBackground {
+  background-image: url(../../static/images/mandala.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+}
+
+body { 
+  padding-top: 70px; 
+}
+
+#portfolio {
+  background-color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#portfolio-h5 {
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 0.05px solid #fff;
+  padding-bottom: 1px;
+  font-size: 44px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+#portfolio-h5:hover {
+  transition: 0.5s;
+  color: #c200fd;
+  border-bottom: 0.05px solid #c200fd;
+}
+
+#portfolio-coming-soon {
+  transition: 0.5s;
+  color: #ebebebad;
+  display: inline-block;
+  padding-bottom: 1px;
+  font-size: 36px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+#portfolio-projects {
+  transition: 0.5s;
+  color: #bafd00;
+  display: inline-block;
+  border-bottom: 0.05px solid #bafd00;
+  padding-bottom: 1.5px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card img {
+  display: inline-block;
+  height: 35%;
+  width: 35%;
+}
+
+.card-title {
+  color: #bafd00;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+.card .card-body .btn {
+  transition: 0.5s;
+  background-color: #c200fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
+}
+
+.card .card-body .btn:hover {
+  transition: 0.5s;
+  background-color: #fff;
+  color: #c200fd;
+}
+
+#services {
+  background-image: url(../images/mandala.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#services-h5 {
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 0.05px solid #fff;
+  padding-bottom: 1px;
+  font-size: 44px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 400; 
+  letter-spacing: 1px;
+}
+
+#services-h5:hover {
+  transition: 0.5s;
+  color: #ffa601;
+  border-bottom: 0.05px solid #ffa601;
+}
+
+.services {
+  border: None;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 250px;
+  max-width: 100;
+}
+
+.services .col-md-4 .card-img {
+  padding-top: 25px;
+  height: 50%;
+  width: 50%;
+}
+
+.services-title {
+  color: #bafd00;
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+.services-text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#contact {
+  background-color: #000;
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact-h5 {
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 0.05px solid #fff;
+  padding-bottom: 1px;
+  font-size: 44px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+#contact-h5:hover {
+  transition: 0.5s;
+  color: #c200fd;
+  border-bottom: 0.05px solid #c200fd;
+}
+
+#contact img {
+  top: 100px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 1000px;
+  background-color: rgba(255, 255, 255, 0.294);
+}
+
+.contact {
+  border: None;
+  background-color: transparent;
+  height: 250px;
+}
+
+.contact .col-md-4 .card-img {
+  padding-top: 25px;
+  height: 50%;
+  width: 50%;
+}
+
+.contact-title {
+  color: #ffa601;
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+.contact-text {
+  color: #bafd00;
+  font-size: 24px;
+}
+
+.contact-text a{
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+.contact-text a:hover{
+  transition: 0.5s;
+  color: #ffa601;
+  text-decoration: None;
+}
+
+#contact-desc {
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.575);
+  display: inline-block;
+  padding-bottom: 1px;
+  font-size: 42px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+#about {
+  background-image: url(../images/mandala.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#about-h5 {
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 0.05px solid #fff;
+  padding-bottom: 1px;
+  font-size: 44px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 400; 
+  letter-spacing: 1px;
+}
+
+#about-h5:hover {
+  transition: 0.5s;
+  color: #ffa601;
+  border-bottom: 0.05px solid #ffa601;
+}
+
+#about img {
+  top: 100px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 1000px;
+  background-color: rgba(255, 255, 255, 0.294);
+}
+
+#about-desc p {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+#about-desc p a {
+  transition: 0.5s;
+  color: #ffa601;
+  text-decoration: None;
+}
+
+#about-desc p a:hover {
+  transition: 0.5s;
+  color: #fff;
+  text-decoration: None;
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #000;
+  color: #ffa601;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
+}
+
+.footer-copyright {
+  padding-left: 2.5%;
+}
+
+.footer a {
+  transition: 0.5s;
+  color: #fff;
+}
+
+.footer a:hover {
+  transition: 0.5s;
+  color: #bafd00;
+  text-decoration: None;
+}
+
+#github-icon a {
+  transition: 0.5s;
+  padding-top: 5px;
+  color: #fff;
+}
+
+#github-icon a:hover {
+  transition: 0.5s;
+  padding-top: 5px;
+  color: #ffa601;
+}
+
+#linkedin-icon a {
+  transition: 0.5s;
+  left: -5%;
+  padding-top: 5px;
+  color: #fff;
+}
+
+#linkedin-icon a:hover {
+  transition: 0.5s;
+  padding-top: 5px;
+  color: #ffa601;
+}
