@@ -124,7 +124,7 @@
 .navbar-nav a {
   transition: 0.5s;
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -144,8 +144,9 @@
 }
 
 .navbar .navbar-nav .nav-item .active {
+  transition: 0.3s;
+  font-weight: 300;
   color: #ffa601;
-  transition: 0.6s;
 }
 
 .navbar-dark .navbar-brand {
