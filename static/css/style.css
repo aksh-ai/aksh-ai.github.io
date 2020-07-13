@@ -186,6 +186,32 @@ body {
   padding-top: 70px; 
 }
 
+.blog {
+  height: 850px;
+  background-color: #000;
+  background-repeat: repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog h5 {
+  padding-top: 15%;
+  transition: 0.5s;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 1px;
+  font-size: 75px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
+}
+
+.blog h5:hover {
+  transition: 0.5s;
+  color: #c200fd;
+}
+
 #portfolio {
   background-color: #000;
   padding-top: 20px;
