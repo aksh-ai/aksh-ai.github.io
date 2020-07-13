@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <script>
+    $(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 600);
+    });
+
+    $(function () {
+        setNavigation();
+    });
+
+    function setNavigation() {
+        var path = window.location.pathname;
+        path = path.replace(/\/$/, "");
+        path = decodeURIComponent(path);
+
+        $(".navbar-nav .nav-item").each(function () {
+            var href = $(this).attr('href');
+            if (path.substring(0, href.length) === href) {
+                $(this).closest('li').addClass('active');
+            }
+        });
+    }
+  </script>
+
+  <title>Akshay Kumaar M</title>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Akshay Kumaar M</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#akkiCarousel">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+  <div id="akkiCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#akkiCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#akkiCarousel" data-slide-to="1"></li>
+      <li data-target="#akkiCarousel" data-slide-to="2"></li>
+      <li data-target="#akkiCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active imgBackground">
+        <div class="carousel-caption d-none d-md-block">
+          <p id="desc">Hi there, I am</p>
+          <p>Akshay Kumaar M</p>
+          <p id="desc">Wanna know more ?</p>
+          <p class="link"><a href="#about">About</a></p>
+        </div>
+      </div>
+      <div class="carousel-item imgBackground">
+        <div class="carousel-caption d-none d-md-block">
+          <p id="desc">I am</p>
+          <p>Akshay Kumaar M</p>
+          <p id="desc">and I love collaborating with technology enthusiasts</p>
+          <p class="link"><a href="https://github.com/aksh-ai">Collaborate</a></p>
+        </div>
+      </div>
+      <div class="carousel-item imgBackground">
+        <div class="carousel-caption d-none d-md-block">
+          <p id="desc">Considering to hire</p>
+          <p>Akshay Kumaar M ?</p>
+          <p id="desc">You should give a try for sure</p>
+          <p class="link"><a href="#contact">Contact</a></p>
+        </div>
+      </div>
+      <div class="carousel-item imgBackground">
+        <div class="carousel-caption d-none d-md-block">
+          <p id="desc">How cool is</p>
+          <p>Akshay Kumaar M ?</p>
+          <p id="desc">Follow him on social media</p>
+          <p class="link"><a href="https://instagram.com/ragabebop">Follow</a></p>
+        </div>
+      </div>
+    </div>
+  
+    <a class="carousel-control-prev" href="#akkiCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+  
+    <a class="carousel-control-next" href="#akkiCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  
+  </div>
+
+  <div class="container-fluid" id="portfolio">
+    <center><h1 class="font-weight-light" id="portfolio-h5">Portfolio</h1></center>
+
+    <section class="py-4">
+      <center><h1 class="font-weight-light" id="portfolio-projects">Projects</h1></center>
+      <p class="lead"></p>
+      
+      <div class="row py-4">
+        <div class="col-sm-3">
+          <div class="card text-center">
+            <center><img src="static/images/neuralBlack.png" alt="neuralBlack"/></center>
+            <div class="card-body">
+              <h5 class="card-title">neuralBlack</h5>
+              <p class="card-text"> Neural Black is a complete brain tumor detection, classification, and diagnosis system with high accuracy that uses state of the art <b>Deep Learning</b> methods.</p>
+              <a href="https://github.com/aksh-ai/brain_tumor_classification" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center">
+            <center><img src="static/images/pyxel-ai.png" style="height: 30%; width: 30%;" alt="pyxel-ai"/></center>
+            <div class="card-body">
+              <h5 class="card-title">Pyxel AI - Warning System for Drivers</h5>
+              <p class="card-text">Uses <b>Computer Vision & Deep Learning</b> that is capable of detecting traffic signs & signals, driver drowsiness, lane changes, pedestrian movements, & sensor features which are analyzed by a sophisticated system to warn the driver.</p>
+              <a href="https://github.com/aksh-ai/pyxel-ai" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center">
+            <center><img src="static/images/image-sr.png" style="height: 55%; width: 55%;" alt="image-sr"/></center>
+            <div class="card-body">
+              <h5 class="card-title">Image Super-Resolution</h5>
+              <p class="card-text">Generating super-resolution images from low-resolution images using <b>Super Resolution Generative Adversarial Network</b> (a Deep Learning method) that looks photo-realistic.</p>
+              <a href="https://github.com/aksh-ai/image-super-resolution" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center">
+            <center><img src="static/images/third-eye.png" style="height: 40%; width: 40%;" alt="third-eye"/></center>
+              <div class="card-body">
+                <h5 class="card-title">Third Eye - Intrusion Detection System</h5>
+                <p class="card-text">An Intrusion Detection system with firewall that uses <b>Machine Learning</b> to detect network intrusions by analyzing network traffic data and extra environmental features.</p>
+                <a href="https://github.com/aksh-ai/third-eye" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-4">
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <center><img src="static/images/malware.png" style="height: 40%; width: 40%;" alt="image-sr"/></center>
+              <div class="card-body">
+                <h5 class="card-title">Malware Prediction</h5>
+                <p class="card-text">Malware Prediction for portable executable applications using <b>Machine Learning</b> to predict if an executable program is a malware or is in a risk to get attacked</p>
+                <a href="https://github.com/aksh-ai/pe_malware_prediction" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <center><img src="static/images/stock-bot.png" style="height: 55%; width: 55%;" alt="image-sr"/></center>
+              <div class="card-body">
+                <h5 class="card-title">Stock Bot</h5>
+                <p class="card-text">A simple stock bot that uses <b>Reinforcement Learning</b> (Deep Q Learning) to sell, hold or buy stocks by taking decisions automatically. Simulates profit and loss based on stock investments.</p>
+                <a href="https://github.com/aksh-ai/stock_bot" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <center><img src="static/images/starry_city.gif" style="height: 45%; width: 45%;" alt="image-sr"/></center>
+              <div class="card-body">
+                <h5 class="card-title">Style Transfer</h5>
+                <p class="card-text">A style-transfer application that can apply art styles or textures over new images.</p>
+                <a href="https://github.com/aksh-ai/style-transfer" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <center><img src="static/images/tofu.png" style="height: 64%; width: 64%;" alt="image-sr"/></center>
+                <div class="card-body">
+                  <h5 class="card-title">Tofu - Deep Learning Framework</h5>
+                  <p class="card-text">Tofu is a Deep Learning Framework for Python, C, C++, and Java that aims to deliver high user-friendliness and user-experience simplfying technicality and improving accessibility to common people.</p>
+                  <a href="https://github.com/aksh-ai/tofu" class="btn btn-primary">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="py-2">
+        <center><p class="lead" id="portfolio-coming-soon">More details to be added soon :)</p></center>
+      </section>
+
+  </div>
+
+  <div class="container-fluid" id="services">
+    <center><h1 class="font-weight-light" id="services-h5">Services</h1></center>
+
+    <section class="container py-4">
+      <div class="card mb-3 services">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <center><img src="./static/images/AI.png" class="card-img" alt="AI"></center>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title services-title">Artificial Intelligence Projects</h5>
+              <p class="card-text services-text">Artificial Intelligence is the future. Everything will be done for you, from building data pipelines for mining and accessing large datasets, creating state of the art Machine Learning & Deep Learning models, deploying them on highly secured servers with high computational support with constant maintenance, risk management, re-configuration, and re-modelling. Image Recognition, Computer Vision, Natural Language Processing, Surveilance-Anomaly-Threat Detection, Facial Recognition, Series Prediction, Recommender Systems. You name it and we'll build it for you :)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="card mb-3 services">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title services-title">Website Development</h5>
+              <p class="card-text services-text">Planning to build an amazing website for you new business, product, blog or yourself? You've come to the right place. Your website will be built using popular industrial technology stack from scratch providing fabulous User Interface design, high flexibility, user-friendliness, user-experience, and documentation. From hosting and security testing to maintenance and risk-management, everything will be done for you as you wish.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./static/images/web-dev.png" class="card-img" style="height: 90%; width: 90%; padding-top: 0%; padding-left: 15%;" alt="Web Dev">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="card mb-3 services">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./static/images/event-management.png" class="card-img" style="height: 90%; width: 70%; padding-top: 10%; padding-left: 15%;" alt="event-management">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title services-title">Event Management</h5>
+              <p class="card-text services-text">Looking for a person to manage or organize your event, party, or festival? With super-networking, you can get whatever you're looking for - Decorations, Food & Buffet, Music, Movies, DJ, Games, Dance, and much more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="card mb-3 services">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title services-title">Training & Mentoring</h5>
+              <p class="card-text services-text">The industrial world is growing rapidly and bridging the gap between what you learn and implement in the industry is important. Hence, constant learning, and updation of skill-sets is required. Quality training, and mentoring will be provided to you on Machine Learning, Deep Learning, Web Development, Cybersecurity, Internet of Things, and Cloud Computing with hands-on assignments and real-world projects. Give a try soon and boost your career progress.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./static/images/training.png" class="card-img" style="height: 90%; width: 90%; padding-top: 0%; padding-left: 15%;" alt="training">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <div class="container-fluid" id="contact">
+    <center><h1 class="font-weight-light" id="contact-h5">Contact</h1></center>
+    <br>
+    <center><img src="./static/images/contact.png" alt="contact"></center>
+      
+    <section class="container py-4" style="padding-left: 175px;">
+      <div class="card text-center mb-3 contact">
+        <div class="row no-gutters">
+          <div class="col-md-10">
+            <div class="card-body">
+              <p class="card-text contact-text">Phone Number: <a href="#contact">+91 7358444868</a></p>
+              <p class="card-text contact-text">Email: <a href="#contact">akshayakki6899@gmail.com</a></p>
+              <p class="card-text contact-text">Instagram: <a href="https://instagram.com/ragabebop">ragabebop</a></p>
+              <p class="card-text contact-text">GitHub: <a href="https://github.com/aksh-ai">aksh-ai</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-2">
+      <center><p class="lead" id="contact-desc">Feel free to contact me anytime ;)</p></center>
+    </section>
+
+  </div>
+
+  <div class="container-fluid" id="about">
+    <center><h1 class="font-weight-light" id="about-h5">About</h1></center>
+    <br>
+    <center><img src="./static/images/me.jpg" alt="contact"></center>
+
+    <section class="container py-4" id="about-desc">
+    <p class="lead">A passionate and enthusiastic student from <a href="https://stjosephs.ac.in">St. Joseph's College of Engineering, Chennai </a>with strong
+      expertise & experience of almost 2 years in <font color="#bafd00">Artificial Intelligence</font>, <font color="#004cfd">Web Development</font>, and <font color="#c200fd">Cyber Security</font> with
+      amazing leadership and time management skills.
+      Recognized consistently for performance excellence
+      and contributions to multiple real-world open source
+      projects with industrial experts.   </p>
+    </section>
+
+    <section class="py-2">
+      <center><p class="lead" id="contact-desc">Will add more details soon</p></center>
+    </section>
+
+  </div>
+
+</body>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  
+  <section>
+    
+    <div class="footer-copyright py-3">© 2020 Copyright 
+      <a href="#"> Akshay Kumaar M</a>
+      <span id="github-icon"><a href="https://github.com/aksh-ai" class="btn-floating btn-lg btn-git" type="button" role="button"><i class="fab fa-github"></i></a></span>
+    </div>
+
+  </section>
+
+</footer>
+
+</html>
