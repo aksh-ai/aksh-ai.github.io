@@ -13,28 +13,7 @@
 
   <link rel="stylesheet" href="./static/css/style.css">
 
-  <script>
-    $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 600);
-    });
-
-    $(function () {
-        setNavigation();
-    });
-
-    function setNavigation() {
-        var path = window.location.pathname;
-        path = path.replace(/\/$/, "");
-        path = decodeURIComponent(path);
-
-        $(".navbar-nav .nav-item").each(function () {
-            var href = $(this).attr('href');
-            if (path.substring(0, href.length) === href) {
-                $(this).closest('li').addClass('active');
-            }
-        });
-    }
-  </script>
+  <script src="./js/myScript.js"></script>
 
   <title>Akshay Kumaar M</title>
 </head>
@@ -69,7 +48,7 @@
   </nav>
 </header>
 
-<body>
+<body data-spy="scroll">
 
   <div id="akkiCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
