@@ -571,7 +571,7 @@ body {
 .exp { 
   background-position: center center;
   border: None;
-  background-color: rgba(255, 255, 255, 0.123);
+  background-color: rgba(255, 255, 255, 0.12);
   max-height: auto;
   max-width: 100;
   min-height: auto;
