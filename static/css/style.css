@@ -580,6 +580,7 @@ body {
 
 .exp .col-md-4 .card-img {
   padding-top: 7.5%;
+  padding-bottom: 7.5%;
   height: 50%;
   width: 50%;
 }
