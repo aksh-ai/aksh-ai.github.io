@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
 }
 
 #coming-soon {
@@ -25,7 +25,7 @@ body {
     top: 45%;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 60px;
     font-family: 'Oswald', sans-serif; 
     font-weight: 200; 
@@ -42,7 +42,7 @@ body {
     top: 53%;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 25px;
     font-family: 'Oswald', sans-serif; 
     font-weight: 200; 
@@ -51,6 +51,7 @@ body {
 }
 
 #name {
+    font-family: 'signature', sans-serif; 
     left: 0;
     line-height: 200px;
     margin-top: -100px;
@@ -63,7 +64,24 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 37.5px;
-    font-family: 'signature', sans-serif; 
     font-weight: 200; 
     letter-spacing: 1px;
+}
+
+#name-alone {
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  color: white;
+  background: -webkit-linear-gradient(#6543ff, #8a58ff, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  font-family: 'signature', sans-serif; 
+  font-weight: 200; 
+  letter-spacing: 1px;
 }
