@@ -13,7 +13,7 @@
 
 .carousel-inner,.carousel,.item,.container,.fill {
   height:100%;
-  width:100%;
+  width: 100%;
   background-position:center center;
 }
 
@@ -39,7 +39,6 @@
 .carousel-caption h5 {
   font-size: 45px;
   letter-spacing: 2px;
-  margin-top: 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #ffa601;
@@ -51,18 +50,11 @@
 
 .carousel-caption p {
   transition: 0.6s;
-  margin: auto;
   font-size: 75px;
   line-height: 1.9;
   font-family: 'signature', sans-serif;
   color: #fff;
   font-weight: 300;
-}
-
-.carousel-caption p:hover {
-  transition: 0.6s;
-  color: #c200fd;
-  cursor: pointer;
 }
 
 #desc {
@@ -75,33 +67,32 @@
 }
 
 .carousel-caption .link {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
   border-radius: 10px;
   width: 50%;
   margin: auto;
-  font-size: 20px;
-  line-height: 1.9;
+  font-size: 18px;
   color: #000000;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .carousel-caption a {
   transition: 0.5s;
   text-decoration: None;
-  background: #c200fd;
-  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid white;
+  padding: 5px 20px;
   display: inline-block;
   color: #fff;
   margin-top: 15px;
-  font-weight: 200;
+  font-weight: 350;
+  border-radius: 25px;
 }
 
 .carousel-caption a:hover {
   transition: 0.5s;
   background-color: #fff;
-  font-weight: 200;
-  color: #c200fd;
+  color: #000;
 } 
 
 .carousel a .carousel-control-prev{
@@ -131,36 +122,40 @@
 
 .navbar-nav a {
   transition: 0.5s;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(184, 184, 184);
+}
+
+.navbar-nav {
+  padding-right: 20px;
 }
 
 .navbar-nav .nav-item .nav-link {
-  padding-right: 7.5px;
-  letter-spacing: 1px;
+  padding-right: 10px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #ffa601;
+  color: #fff;
 }
 
 .navbar-nav a:hover {
-  color: #ffa601;
+  color: #fff;
   transition: 0.6s;
 }
 
 .navbar .navbar-nav .nav-item .active {
   transition: 0.3s;
   font-weight: 300;
-  color: #ffa601;
+  color: #fff;
 }
 
 .navbar-dark .navbar-brand {
+  margin-left: 15px;
   transition: 0.5s;
-  color: #ffa601;
-  font-size: 25px;
+  color: #fff;
+  font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: 'signature', sans-serif;
@@ -168,13 +163,8 @@
   font-weight: 300;
 }
 
-.navbar-dark .navbar-brand:hover {
-  color: #c200fd;
-  transition: 0.8s;
-}
-
 .imgBackground {
-  background-image: url(../../static/images/mandala.png);
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   background-repeat: repeat;
   background-size: cover;
   width: 100%;
@@ -183,7 +173,7 @@
 }
 
 body { 
-  padding-top: 70px; 
+  padding-top: 69px; 
 }
 
 .blog {
@@ -207,11 +197,6 @@ body {
   letter-spacing: 1px;
 }
 
-.blog h5:hover {
-  transition: 0.5s;
-  color: #c200fd;
-}
-
 #portfolio {
   background-color: #000;
   padding-top: 20px;
@@ -227,16 +212,10 @@ body {
   display: inline-block;
   border-bottom: 0.05px solid #fff;
   padding-bottom: 1px;
-  font-size: 44px;
+  font-size: 38px;
   font-family: 'signature', sans-serif; 
   font-weight: 200; 
   letter-spacing: 1px;
-}
-
-#portfolio-h5:hover {
-  transition: 0.5s;
-  color: #c200fd;
-  border-bottom: 0.05px solid #c200fd;
 }
 
 #portfolio-coming-soon {
@@ -252,11 +231,11 @@ body {
 
 #portfolio-projects {
   transition: 0.5s;
-  color: #bafd00;
+  color: #fff;
   display: inline-block;
-  border-bottom: 0.05px solid #bafd00;
+  border-bottom: 0.05px solid #fff;
   padding-bottom: 1.5px;
-  font-size: 30px;
+  font-size: 26px;
   font-family: 'Oswald', sans-serif; 
   font-weight: 200; 
   letter-spacing: 1px;
@@ -273,7 +252,7 @@ body {
 }
 
 .card-title {
-  color: #bafd00;
+  color: #fff;
   font-size: 22px;
   font-family: 'Oswald', sans-serif; 
   font-weight: 300; 
@@ -283,30 +262,34 @@ body {
 .card-text {
   color: rgba(255, 255, 255, 0.90);
   font-size: 18px;
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 200; 
-  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
 }
 
 .card .card-body .btn {
   transition: 0.5s;
-  background-color: #c200fd;
+  background-color: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 0;
-  border-radius: 0;
+  border: 1px solid white;
+  border-radius: 25;
   font-family: 'Roboto', sans-serif; 
-  font-weight: 300; 
+  font-weight: 400;
+}
+
+.card .card-body .btn {
+  border-radius: 25px;
+  font-size: 15px;
 }
 
 .card .card-body .btn:hover {
   transition: 0.5s;
   background-color: #fff;
-  color: #c200fd;
+  color: #000;
 }
 
 #services {
-  background-image: url(../images/mandala.png);
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   background-repeat: repeat;
   background-size: cover;
   background-size: 100%;
@@ -322,16 +305,10 @@ body {
   display: inline-block;
   border-bottom: 0.05px solid #fff;
   padding-bottom: 1px;
-  font-size: 44px;
+  font-size: 38px;
   font-family: 'signature', sans-serif; 
   font-weight: 400; 
   letter-spacing: 1px;
-}
-
-#services-h5:hover {
-  transition: 0.5s;
-  color: #ffa601;
-  border-bottom: 0.05px solid #ffa601;
 }
 
 .services {
@@ -341,7 +318,7 @@ body {
   max-height: auto;
   max-width: 100;
   min-height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .services .col-md-4 .card-img {
@@ -351,8 +328,8 @@ body {
 }
 
 .services-title {
-  color: #bafd00;
-  font-size: 26px;
+  color: #fff;
+  font-size: 24px;
   font-family: 'Oswald', sans-serif; 
   font-weight: 300; 
   letter-spacing: 1px;
@@ -360,13 +337,15 @@ body {
 
 .services-text {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #blog {
   background-color: #000;
-  background-image: url('../images/mandala.png');
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   background-repeat: repeat;
   background-size: cover;
   background-size: 100%;
@@ -381,7 +360,7 @@ body {
   display: inline-block;
   border-bottom: 0.05px solid #fff;
   padding-bottom: 1px;
-  font-size: 44px;
+  font-size: 38px;
   font-family: 'signature', sans-serif; 
   font-weight: 200; 
   letter-spacing: 1px;
@@ -389,13 +368,13 @@ body {
 
 #blog-h5:hover {
   transition: 0.5s;
-  color: #ffa601;
-  border-bottom: 0.05px solid #ffa601;
+  color: #fff;
+  border-bottom: 0.05px solid #fff;
 }
 
 #blog-desc {
   transition: 0.5s;
-  color: #ffa601;
+  color: #fff;
   text-shadow: #000000 rgba(0, 0, 0, 0.582);
   display: inline-block;
   padding-top: 2.5%;
@@ -426,7 +405,7 @@ body {
   display: inline-block;
   border-bottom: 0.05px solid #fff;
   padding-bottom: 1px;
-  font-size: 44px;
+  font-size: 38px;
   font-family: 'signature', sans-serif; 
   font-weight: 200; 
   letter-spacing: 1px;
@@ -468,20 +447,14 @@ body {
 }
 
 .contact-text {
-  color: #bafd00;
-  font-size: 24px;
+  color: #fff;
+  font-size: 22px;
 }
 
 .contact-text a{
   transition: 0.5s;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.727);
   font-size: 22px;
-}
-
-.contact-text a:hover{
-  transition: 0.5s;
-  color: #ffa601;
-  text-decoration: None;
 }
 
 #contact-desc {
@@ -489,7 +462,7 @@ body {
   color: rgb(255, 255, 255);
   display: inline-block;
   padding-bottom: 1px;
-  font-size: 40px;
+  font-size: 38px;
   font-family: 'signature', sans-serif; 
   font-weight: 200; 
   letter-spacing: 1px;
@@ -528,30 +501,21 @@ body {
 
 #about-desc p {
   border-radius: 5px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/mandala.png);
-  background-color: rgba(255, 255, 255, 0.178);
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   background-repeat: repeat;
   background-size: cover;
   transition: 0.5s;
   color: #fff;
-  display: inline-block;
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 10px;
   padding-bottom: 20px;
-  font-size: 22px;
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 300; 
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300;
 }
 
 #about-desc p a {
-  transition: 0.5s;
-  color: #ffa601;
-  text-decoration: None;
-}
-
-#about-desc p a:hover {
   transition: 0.5s;
   color: #fff;
   text-decoration: None;
@@ -586,7 +550,7 @@ body {
 }
 
 .exp-title {
-  color: #ffa601;
+  color: #fff;
   font-size: 26px;
   font-family: 'Oswald', sans-serif; 
   font-weight: 300; 
@@ -595,7 +559,7 @@ body {
 
 .exp-text {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -626,7 +590,7 @@ body {
   padding-top: 10px;
   padding-bottom: 5px;
   background-color: #000;
-  color: #ffa601;
+  color: #fff;
   font-size: 16px;
   font-family: 'Roboto', sans-serif; 
   font-weight: 300; 
@@ -639,12 +603,6 @@ body {
 .footer a {
   transition: 0.5s;
   color: #fff;
-}
-
-.footer a:hover {
-  transition: 0.5s;
-  color: #bafd00;
-  text-decoration: None;
 }
 
 #github-icon a {
