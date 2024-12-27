@@ -146,6 +146,30 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+document.addEventListener("DOMContentLoaded", () => {
+    const githubStarsElements = document.querySelectorAll(".github-stars");
+
+    githubStarsElements.forEach(element => {
+        const repo = element.getAttribute("data-repo");
+        const starsCountElement = element.querySelector(".stars-count");
+
+        if (repo) {
+            fetch(`https://api.github.com/repos/${repo}`)
+                .then(response => response.json())
+                .then(data => {
+                    const starCount = data.stargazers_count || 0;
+                    starsCountElement.textContent = starCount;
+                })
+                .catch(error => {
+                    console.error(`Error fetching stars for ${repo}:`, error);
+                    starsCountElement.textContent = "N/A";
+                });
+        } else {
+            starsCountElement.textContent = "N/A";
+        }
+    });
+});
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header');

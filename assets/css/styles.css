@@ -296,7 +296,6 @@ img {
 .home__blob-img {
   width: 180px;
   translate: -5px;
-  filter: grayscale(50);
   /* mix-blend-mode: multiply; */
 }
 
@@ -542,7 +541,7 @@ img {
 }
 
 .skills__javas {
-  width: 80%;
+  width: 75%;
 }
 
 .skills__node {
@@ -550,7 +549,7 @@ img {
 }
 
 .skills__firebase {
-  width: 60%;
+  width: 75%;
 }
 
 .skills__pythons {
@@ -562,11 +561,11 @@ img {
 }
 
 .skills__cv {
-  width: 92%;
+  width: 95%;
 }
 
 .skills__nlp {
-  width: 85%;
+  width: 95%;
 }
 
 .skills__ap {
@@ -574,11 +573,11 @@ img {
 }
 
 .skills__ps {
-  width: 85%;
+  width: 90%;
 }
 
 .skills__dav {
-  width: 80%;
+  width: 85%;
 }
 
 .skills__python {
@@ -602,7 +601,7 @@ img {
 }
 
 .skills__aws {
-  width: 75%;
+  width: 85%;
 }
 
 .skills__gpu {
@@ -944,6 +943,19 @@ img {
 
 .testimonial__icon-star {
   color: var(--first-color);
+}
+
+.github-stars {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #dcdada;
+  display: flex;
+}
+
+.github-stars .uil-star {
+  margin-right: 10px;
+  color: gold;
 }
 
 .swiper-container .swiper-pagination-testimonial {
